@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+<Logger file="log/clariec.log"	logger-queue-size="2048" max-size-in-mb="1000" />
+
+<ApplicationManager name="MarketDataUS" cpu="2"/>
+<SessionManagers>
+	<CallBackThreadPool name="global-raiser">
+		<CallbackThread name="" cpu="" range="0-9a-m"/>
+		<CallbackThread name="" cpu="" range="n-z" />
+	</CallBackThreadPool>
+	<SessionManager name="" libarary="" callback-thread-pool="">			
+		<Recovery snapshot-username="" snapshot-password="" global-primary-tcp-snapshot="" global-secondary-tcp-snapshot="" global-primary-tcp-retranse="" global-secondary-tcp-retrans=""
+				retranse-username="" retranse-password="" global-primary-udp-snapshot="" global-secondary-udp-snapshot="" global-primary-udp-retranse="" global-secondary-udp-retrans=""/>
+		<CallBackThreadPool name="feed-raiser"/>
+		<Connection name="" callback-thread-pool="">
+			<CallBackThreadPool name="connection1-raiser1"/>
+			<CallBackThreadPool name="connection1-raiser2"/>
+			<Linehandler name="" type="" data-type="" thread="" callback-thread-pool="" dormant-secondarr=""
+					username="" password="" primary-mc-line="" 	secondary-mc-line=""  primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					snapshot-username="" snapshot-password="" primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					retranse-username="" retranse-password="" primary-mc-snapshot="" secondary-mc-snapshot="" primary-mc-retranse="" secondary-mc-retrans=""/>
+		</Connection>
+		<Connection cpu="" callback-thread-pool="">
+			<CallBackThreadPool name="connection2-raiser1"/>
+			<CallBackThreadPool name="connection2-raiser2"/>
+			<Linehandler name="" type="" data-type="" callback-thread-pool=""
+					primary-mc-line="" 	secondary-mc-line=""  primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					udp-primary-snapshot="" udp-secondary-snapshot="" udp-primary-retranse="" udp-secondary-retrans=""/>
+		</Connection>
+	</SessionManager>
+</SessionManagers>
+</config>

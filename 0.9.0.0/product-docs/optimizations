@@ -1,0 +1,13 @@
+1> Recordings:
+	Recording structure is still not perfect. But still see if you could go with same.
+
+2> Logger:
+	Get the new optimized interface queue working
+
+3> Locks:
+	Implement the userspace locks.
+
+4> Provide automatic disaster recovery in case of feed 
+	Plus provide automatic recovery to the client connecting to multiple distribution server
+
+

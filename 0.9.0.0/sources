@@ -1,0 +1,38 @@
+INFRA_SOURCES= infra/logger/Logger.cpp\
+	infra/thread/Thread.cpp\
+	infra/lock/Lock.cpp\
+	infra/judy/Judy.cpp\
+	infra/pugixml/pugixml.cpp\
+	infra/gzstream/gzstream.cpp\
+	infra/socket/Socket.cpp\
+	infra/utils/StringUtils.cpp
+
+BASE_SOURCES= base/Book.cpp\
+	base/PriceLevel.cpp\
+	base/Order.cpp\
+	base/MarketDataApplication.cpp\
+	base/NetworkReader.cpp\
+	base/Packet.cpp\
+	base/FeedHandler.cpp\
+	base/LineGroup.cpp\
+	base/Line.cpp\
+	base/API.cpp\
+	base/BaseCommon.cpp\
+	base/Trade.cpp\
+	base/Status.cpp\
+	base/Subscription.cpp\
+	base/ProductInfo.cpp\
+	base/Recorder.cpp
+
+MILLENIUM_SOURCES= feeds/millenium/MilleniumFeedHandler.cpp\
+	feeds/millenium/MilleniumLineGroup.cpp\
+	feeds/millenium/MilleniumLine.cpp
+
+OMXNORDIC_SOURCES= feeds/omxnordic/OMXNordicFeedHandler.cpp\
+	feeds/omxnordic/OMXNordicLineGroup.cpp\
+	feeds/omxnordic/OMXNordicLine.cpp\
+	feeds/omxnordic/OMXNordicUtils.cpp
+
+MDAPP_SOURCES= test/MDApp.cpp
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+<Logger name="logger" file="clarice.log" level="INFO" logger-queue-size="2000" max-size-in-mb="1000" cpu="5"/>
+
+<ApplicationManager name="MarketDataUS" bind-threads="manually" first-cpu="4" cpu="4"/>
+
+<NetworkReaders>
+	<NetworkReader name="NetReader1" cpu="7" />
+	<NetworkReader name="NetReader2" cpu="9" />
+	<NetworkReader name="NetReader3" cpu="11" />
+</NetworkReaders>
+
+<FeedHandlers>
+	<FeedOtherType/>			
+
+	<FeedHandler name="millenium" feed="millenium" playback-mode="file" libarary="" callback-thread-pool="" playback-files="oslo.cl.gz" xre-record="true" xrecord="true" callbacks="BOOK,TRADE,STATUS,CUSTOM" maintain-orders="true">			
+		<Recovery snapshot-username="" snapshot-password="" global-primary-tcp-snapshot="" global-secondary-tcp-snapshot="" global-primary-tcp-retranse="" global-secondary-tcp-retrans=""
+				retranse-username="" retranse-password="" global-primary-udp-snapshot="" global-secondary-udp-snapshot="" global-primary-udp-retranse="" global-secondary-udp-retrans=""/>
+		<LineGroups>
+		<LineGroup name="LG1" xprocessor="EProcessor" network-reader="NetReader1" cpu="6" callback-thread-pool="">
+			<Lines>
+			<Line name="DOB-EQ" type="" data-type="" callback-thread-pool="" dormant-secondarr=""
+					username="" password="" retrans-username="" retrans-password="" snapshot-username="" snapshot-password=""
+					primary-mc-line="224.4.2.224:60300" secondary-mc-line="224.4.3.224:60300"  primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					udp-primary-snapshot="" udp-secondary-snapshot="" udp-primary-retranse="" udp-secondary-retrans=""/>
+			</Lines>
+		</LineGroup>
+		<LineGroup name="LG2" xprocessor="BProcessor" network-reader="NetReader2" cpu="8" callback-thread-pool="">
+			<Lines>
+			<Line name="DOB-WAR" type="" data-type="" callback-thread-pool="" dormant-secondarr=""
+					username="" password="" retrans-username="" retrans-password="" snapshot-username="" snapshot-password=""
+					primary-mc-line="224.4.2.226:60300" 	secondary-mc-line="224.4.3.226:60300"  primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					udp-primary-snapshot="" udp-secondary-snapshot="" udp-primary-retranse="" udp-secondary-retrans=""/>
+			</Lines>
+		</LineGroup>
+		<LineGroup name="LG3" xprocessor="WProcessor" network-reader="NetReader3" cpu="10" callback-thread-pool="">
+			<Lines>
+			<Line name="WARRANT" type="" data-type="" callback-thread-pool="" dormant-secondarr=""
+					username="" password="" retrans-username="" retrans-password="" snapshot-username="" snapshot-password=""
+					primary-mc-line="224.4.2.228:60300" 	secondary-mc-line="224.4.3.228:60300" primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					udp-primary-snapshot="" udp-secondary-snapshot="" udp-primary-retranse="" udp-secondary-retrans=""/>
+			</Lines>
+		</LineGroup>
+		</LineGroups>
+	</FeedHandler>
+</FeedHandlers>
+</config>
+

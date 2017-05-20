@@ -1,0 +1,36 @@
+Constructors
+	every constructor should be explicit
+	User defined members data should be initialised like derivedClass():memberConstrctr(), member2Constrctr()
+	should contain the unitilised member check, which must be optional check which could raise the exception
+	write default values at both the places of declaration and definition and take care that they are correct
+	There should not be plain set and getMember data functions. Class must act as a service.
+	If any memberData setting function and getting function should be inside the .h file which will make them inline by default.All other functions should be defined in the corrosponding cpp file
+
+	eg: 
+		class A	
+		{
+			data _countA;
+			public:
+				data();	
+				get_countA();
+				~data();
+		}
+		
+Functions:
+	If user data type,  use pass by reference-to-const only.	
+	No default arguments, at all.
+	first input parameters, then input-output parameters and then output parameters.
+	The input paramters must be const[Mayers, effectice C++,3rdE, page19].
+
+
+variable naming;
+	boolean: must start with "_is" keyword
+	No Macro Variables: they are not logged in symbol tables, do not have scopes. Use constants, inline functions, templates.[Mayers, effectice C++,3rdE, page13]. only #def macros should be used.
+
+Including files:
+	first std headers
+	then boost/STL headers
+	then own infra headers
+	then local feed/module header
+
+	

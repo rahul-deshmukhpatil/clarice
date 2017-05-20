@@ -1,0 +1,1025 @@
+------------------------------------------------------------------------
+r238 | jcrawford | 2016-09-27 23:50:30 +0530 (Tue, 27 Sep 2016) | 1 line
+
+[scripts]: modified regression script
+------------------------------------------------------------------------
+r237 | jcrawford | 2016-09-27 23:49:17 +0530 (Tue, 27 Sep 2016) | 2 lines
+
+[Makefile] : added all-debug and all-release
+[MDApp]: added logs
+------------------------------------------------------------------------
+r236 | jcrawford | 2016-06-18 18:41:05 +0530 (Sat, 18 Jun 2016) | 1 line
+
+[base]: corrected then LATENCY macro names
+------------------------------------------------------------------------
+r235 | jcrawford | 2016-06-18 18:16:14 +0530 (Sat, 18 Jun 2016) | 1 line
+
+[test]: minor modification for change
+------------------------------------------------------------------------
+r234 | jcrawford | 2016-05-24 17:45:07 +0530 (Tue, 24 May 2016) | 1 line
+
+[product-docs]: added a goal
+------------------------------------------------------------------------
+r233 | jcrawford | 2016-04-02 00:20:52 +0530 (Sat, 02 Apr 2016) | 1 line
+
+[base]: minor change is getIdSub
+------------------------------------------------------------------------
+r232 | jcrawford | 2016-04-01 23:37:42 +0530 (Fri, 01 Apr 2016) | 1 line
+
+[omxnordic]: added the utils files
+------------------------------------------------------------------------
+r231 | jcrawford | 2016-03-29 23:11:42 +0530 (Tue, 29 Mar 2016) | 1 line
+
+[millenium]: corrected the delete callback
+------------------------------------------------------------------------
+r230 | jcrawford | 2016-03-29 18:04:53 +0530 (Tue, 29 Mar 2016) | 2 lines
+
+[base]: change in order update API
+[omxnordic]: supported order updated messages
+------------------------------------------------------------------------
+r229 | jcrawford | 2016-03-28 11:08:11 +0530 (Mon, 28 Mar 2016) | 1 line
+
+[omxnordic]: supported the trading state and order MPID messages
+------------------------------------------------------------------------
+r228 | jcrawford | 2016-03-27 21:21:56 +0530 (Sun, 27 Mar 2016) | 1 line
+
+[base]: added pInfo/sub creation in case not already present
+------------------------------------------------------------------------
+r227 | jcrawford | 2016-03-24 11:59:31 +0530 (Thu, 24 Mar 2016) | 3 lines
+
+[base]: correcte the line sequence proecssing
+[millenium] : adde new parseFuction definition
+[omxnordic] : added message proecssing for addOrder
+------------------------------------------------------------------------
+r226 | jcrawford | 2016-03-21 10:50:22 +0530 (Mon, 21 Mar 2016) | 1 line
+
+[omxnordic]: initial checkin for the feed
+------------------------------------------------------------------------
+r225 | jcrawford | 2016-03-19 18:24:49 +0530 (Sat, 19 Mar 2016) | 1 line
+
+[base]: checked in gap processing code
+------------------------------------------------------------------------
+r224 | jcrawford | 2016-03-16 10:58:02 +0530 (Wed, 16 Mar 2016) | 1 line
+
+[base]: corrected the Line gap logs
+------------------------------------------------------------------------
+r223 | jcrawford | 2016-03-15 22:08:30 +0530 (Tue, 15 Mar 2016) | 1 line
+
+[base]: implemented the quotes callbacks
+------------------------------------------------------------------------
+r222 | jcrawford | 2016-03-15 00:28:14 +0530 (Tue, 15 Mar 2016) | 2 lines
+
+[base] : corrected the  LATENCY macros
+[test] : corrected the  LATENCY macros
+------------------------------------------------------------------------
+r221 | jcrawford | 2016-03-14 23:38:31 +0530 (Mon, 14 Mar 2016) | 1 line
+
+[test]: minor change in printing order book headline
+------------------------------------------------------------------------
+r220 | jcrawford | 2016-03-14 22:41:18 +0530 (Mon, 14 Mar 2016) | 3 lines
+
+[base]: added code for orderbook without levels
+[test]: printing orderbook
+[scripts]: chagned regression script
+------------------------------------------------------------------------
+r219 | jcrawford | 2016-03-13 13:10:50 +0530 (Sun, 13 Mar 2016) | 4 lines
+
+[base]: code for quote handling
+[test]: added code to print quote
+[euronext]: added few messages 
+
+------------------------------------------------------------------------
+r218 | jcrawford | 2016-03-10 10:47:21 +0530 (Thu, 10 Mar 2016) | 1 line
+
+[base]:Few modifications for the quote
+------------------------------------------------------------------------
+r217 | jcrawford | 2016-03-10 10:15:48 +0530 (Thu, 10 Mar 2016) | 1 line
+
+[base]: code for quote initialization
+------------------------------------------------------------------------
+r216 | jcrawford | 2016-03-04 19:19:27 +0530 (Fri, 04 Mar 2016) | 1 line
+
+[euronext]: added few messages
+------------------------------------------------------------------------
+r215 | jcrawford | 2016-02-29 20:24:55 +0530 (Mon, 29 Feb 2016) | 1 line
+
+[base]: Rearragned the thread data members
+------------------------------------------------------------------------
+r214 | jcrawford | 2016-02-27 22:36:36 +0530 (Sat, 27 Feb 2016) | 1 line
+
+[base]: moved the order pool to line
+------------------------------------------------------------------------
+r213 | jcrawford | 2016-02-27 16:48:20 +0530 (Sat, 27 Feb 2016) | 1 line
+
+[base]: moved getLatency at global level
+------------------------------------------------------------------------
+r212 | jcrawford | 2016-02-27 16:03:12 +0530 (Sat, 27 Feb 2016) | 1 line
+
+[base]: moved globalClock as a inline function
+------------------------------------------------------------------------
+r211 | jcrawford | 2016-02-27 15:18:11 +0530 (Sat, 27 Feb 2016) | 1 line
+
+[test]: mdapp moved the assert to ASSERT statement
+------------------------------------------------------------------------
+r210 | jcrawford | 2016-02-27 14:55:52 +0530 (Sat, 27 Feb 2016) | 3 lines
+
+[base]: latency calc made optional with build
+[millenium] : latency calc made optional with build
+[test] : latency calc made optional with build
+------------------------------------------------------------------------
+r209 | jcrawford | 2016-02-27 13:41:51 +0530 (Sat, 27 Feb 2016) | 1 line
+
+[euronext]: added initial patch for the euronext
+------------------------------------------------------------------------
+r208 | jcrawford | 2016-02-20 23:14:41 +0530 (Sat, 20 Feb 2016) | 1 line
+
+[base]: implemented the assertion
+------------------------------------------------------------------------
+r207 | jcrawford | 2016-02-20 01:20:06 +0530 (Sat, 20 Feb 2016) | 1 line
+
+[base]: made functions inline and few latency supprts for order pool, subscription findnig and order map latency calculations
+------------------------------------------------------------------------
+r206 | jcrawford | 2016-02-19 23:39:50 +0530 (Fri, 19 Feb 2016) | 1 line
+
+[base]: removed the unecessary include files from other .h, cuasing the dependancy 
+------------------------------------------------------------------------
+r205 | jcrawford | 2016-02-19 20:09:07 +0530 (Fri, 19 Feb 2016) | 1 line
+
+[base]: removed the pugixml.h dependancy
+------------------------------------------------------------------------
+r204 | jcrawford | 2016-02-18 17:58:43 +0530 (Thu, 18 Feb 2016) | 1 line
+
+[base]: changed name of the subscribe function
+------------------------------------------------------------------------
+r203 | jcrawford | 2016-02-18 00:07:55 +0530 (Thu, 18 Feb 2016) | 1 line
+
+[base]: corrected the callbacks for the book
+------------------------------------------------------------------------
+r202 | jcrawford | 2016-02-17 23:17:41 +0530 (Wed, 17 Feb 2016) | 1 line
+
+[base]: cleared floating point exception in printLatency
+------------------------------------------------------------------------
+r201 | jcrawford | 2016-02-17 23:09:08 +0530 (Wed, 17 Feb 2016) | 1 line
+
+[base]: implemented per callback calling
+------------------------------------------------------------------------
+r200 | jcrawford | 2016-02-17 00:14:55 +0530 (Wed, 17 Feb 2016) | 1 line
+
+[base]: changed the subscriptionAPI methods
+------------------------------------------------------------------------
+r199 | jcrawford | 2016-02-16 10:35:56 +0530 (Tue, 16 Feb 2016) | 1 line
+
+[base]: made _sub->callbacks non atomic variable
+------------------------------------------------------------------------
+r198 | jcrawford | 2016-02-16 00:13:55 +0530 (Tue, 16 Feb 2016) | 1 line
+
+[base]: removed Processor patch 2
+------------------------------------------------------------------------
+r197 | jcrawford | 2016-02-15 23:17:28 +0530 (Mon, 15 Feb 2016) | 1 line
+
+[millenium]: first patch for removing Processor
+------------------------------------------------------------------------
+r196 | jcrawford | 2016-02-14 20:46:03 +0530 (Sun, 14 Feb 2016) | 1 line
+
+[base]: changed the latency printing
+------------------------------------------------------------------------
+r195 | jcrawford | 2016-02-14 18:32:25 +0530 (Sun, 14 Feb 2016) | 1 line
+
+[base]: Book has support for the orderbook now
+------------------------------------------------------------------------
+r194 | jcrawford | 2016-02-14 16:04:11 +0530 (Sun, 14 Feb 2016) | 1 line
+
+[base]: checked in book allocator
+------------------------------------------------------------------------
+r193 | jcrawford | 2016-02-13 20:39:02 +0530 (Sat, 13 Feb 2016) | 1 line
+
+[base]: made latency into nano seconds
+------------------------------------------------------------------------
+r192 | jcrawford | 2016-02-12 17:50:23 +0530 (Fri, 12 Feb 2016) | 1 line
+
+[test]: print the buy side orders in reverse order
+------------------------------------------------------------------------
+r191 | jcrawford | 2016-02-12 08:47:01 +0530 (Fri, 12 Feb 2016) | 1 line
+
+[test]: remove a bug in the printing order book
+------------------------------------------------------------------------
+r190 | jcrawford | 2016-02-12 00:24:26 +0530 (Fri, 12 Feb 2016) | 1 line
+
+[test]: added routine to print levels
+------------------------------------------------------------------------
+r189 | jcrawford | 2016-02-11 19:16:31 +0530 (Thu, 11 Feb 2016) | 1 line
+
+[base]: change to maintain the num of orders on price level
+------------------------------------------------------------------------
+r188 | jcrawford | 2016-02-11 10:54:19 +0530 (Thu, 11 Feb 2016) | 1 line
+
+[base]: fix in the order.cpp while raising execute now populate oldpx as well
+------------------------------------------------------------------------
+r187 | jcrawford | 2016-02-11 00:56:44 +0530 (Thu, 11 Feb 2016) | 1 line
+
+[base]: implemented the order book patch2
+------------------------------------------------------------------------
+r186 | jcrawford | 2016-02-10 11:15:42 +0530 (Wed, 10 Feb 2016) | 1 line
+
+[base]: implemented the order book
+------------------------------------------------------------------------
+r185 | jcrawford | 2016-02-08 23:42:16 +0530 (Mon, 08 Feb 2016) | 1 line
+
+[test]: couple of script fixes
+------------------------------------------------------------------------
+r184 | jcrawford | 2016-02-08 23:22:38 +0530 (Mon, 08 Feb 2016) | 1 line
+
+[base]: Moved orderMap from lineGroup to line
+------------------------------------------------------------------------
+r183 | jcrawford | 2016-02-03 19:52:14 +0530 (Wed, 03 Feb 2016) | 1 line
+
+[base]: Suppressed a bug in seeking back in recording file , introduced the new functions for spsc queue.
+------------------------------------------------------------------------
+r182 | jcrawford | 2016-02-02 22:18:17 +0530 (Tue, 02 Feb 2016) | 3 lines
+
+[infra]: new pop and push functions for spsc queue
+[base]: for better latency now push pop is done via new functions, fixed logical bug in calculating Q read latency
+
+------------------------------------------------------------------------
+r181 | jcrawford | 2016-02-01 22:40:15 +0530 (Mon, 01 Feb 2016) | 1 line
+
+[base]: Changes for testing the read latency
+------------------------------------------------------------------------
+r180 | jcrawford | 2016-01-30 02:08:14 +0530 (Sat, 30 Jan 2016) | 2 lines
+
+[base]: moved latency calculations to the LineGroup
+[test]:  moved latency calculations to the LineGroup
+------------------------------------------------------------------------
+r179 | jcrawford | 2016-01-29 09:05:38 +0530 (Fri, 29 Jan 2016) | 2 lines
+
+[base]: fixed a segfault in printing stats
+[test]: now calculate latency in nanoseconds
+------------------------------------------------------------------------
+r178 | jcrawford | 2016-01-28 19:36:17 +0530 (Thu, 28 Jan 2016) | 1 line
+
+[scripts]: minor modifications
+------------------------------------------------------------------------
+r177 | jcrawford | 2016-01-28 19:32:46 +0530 (Thu, 28 Jan 2016) | 1 line
+
+[test]: minor fix 
+------------------------------------------------------------------------
+r176 | jcrawford | 2016-01-28 19:24:27 +0530 (Thu, 28 Jan 2016) | 5 lines
+
+[infra]: Logger, Now time will be printed in nano seconds
+[base]: Now nanosecond time stamp precision is supported
+[millenium]: Now nanosecond time stamp precision is supported
+[test]: Now nanosecond time stamp precision is supported
+
+------------------------------------------------------------------------
+r175 | jcrawford | 2016-01-27 23:47:16 +0530 (Wed, 27 Jan 2016) | 1 line
+
+[scripts]: added scripts for regression
+------------------------------------------------------------------------
+r174 | jcrawford | 2016-01-27 23:11:52 +0530 (Wed, 27 Jan 2016) | 1 line
+
+[scripts]: added script to monitor system calls called by threads
+------------------------------------------------------------------------
+r173 | jcrawford | 2016-01-27 23:07:20 +0530 (Wed, 27 Jan 2016) | 2 lines
+
+[test]: made changes into printBase
+
+------------------------------------------------------------------------
+r172 | jcrawford | 2016-01-26 11:46:28 +0530 (Tue, 26 Jan 2016) | 4 lines
+
+[base]: Moved the feedAPI to be part of the MDApp
+[millenium]: oved the feedAPI to be part of the MDApp
+[test]: oved the feedAPI to be part of the MDApp
+
+------------------------------------------------------------------------
+r171 | jcrawford | 2016-01-25 10:54:36 +0530 (Mon, 25 Jan 2016) | 1 line
+
+[test]: changed the assertion structrure
+------------------------------------------------------------------------
+r170 | jcrawford | 2016-01-25 10:49:33 +0530 (Mon, 25 Jan 2016) | 1 line
+
+[test]: Formating for the print functions
+------------------------------------------------------------------------
+r169 | jcrawford | 2016-01-24 23:51:42 +0530 (Sun, 24 Jan 2016) | 3 lines
+
+[base]: Now subscriptions are done in grep regex pattern
+[millenium]: corrected a logical bug
+[test]: MDApp modified to run with command line options
+------------------------------------------------------------------------
+r168 | jcrawford | 2016-01-24 14:58:17 +0530 (Sun, 24 Jan 2016) | 1 line
+
+[test]: Made MDApp class to accept the command line argumemnts
+------------------------------------------------------------------------
+r167 | jcrawford | 2016-01-24 01:48:19 +0530 (Sun, 24 Jan 2016) | 3 lines
+
+[base]: Changes for making the SubscriptionAPI base class for the DMApp
+[millenium]: Changes for making the SubscriptionAPI base class for the DMApp
+[test]: Changes for making the SubscriptionAPI base class for the DMApp
+------------------------------------------------------------------------
+r166 | jcrawford | 2016-01-23 13:00:13 +0530 (Sat, 23 Jan 2016) | 1 line
+
+[test]: Moved the subscription creation part in the Application
+------------------------------------------------------------------------
+r165 | jcrawford | 2016-01-22 09:22:32 +0530 (Fri, 22 Jan 2016) | 3 lines
+
+[infra]: Changed the BoostSPSC queue implementation
+[Millenium]: Minor logger changes
+[base]: SubscriptionAPI changed the base fprintf to check data quality
+------------------------------------------------------------------------
+r164 | jcrawford | 2016-01-18 23:12:32 +0530 (Mon, 18 Jan 2016) | 1 line
+
+[base]: printing the record time while printing base info
+------------------------------------------------------------------------
+r163 | jcrawford | 2016-01-18 22:33:48 +0530 (Mon, 18 Jan 2016) | 1 line
+
+[base]: populating the recording time on the _packet
+------------------------------------------------------------------------
+r162 | jcrawford | 2016-01-18 01:13:13 +0530 (Mon, 18 Jan 2016) | 1 line
+
+[base]: fixed something ... seg fault ... I hope so
+------------------------------------------------------------------------
+r161 | jcrawford | 2016-01-17 20:15:08 +0530 (Sun, 17 Jan 2016) | 2 lines
+
+[base]: implemented config option first-cpu
+[scripts]: couple of fixes
+------------------------------------------------------------------------
+r160 | jcrawford | 2016-01-17 19:37:57 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[scripts]: made the changes into scripts of irqbind and cpu turn on/off
+------------------------------------------------------------------------
+r159 | jcrawford | 2016-01-17 19:23:03 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[scripts]: added script to turnoff core
+------------------------------------------------------------------------
+r158 | jcrawford | 2016-01-17 19:21:57 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[base]: checked in irqbind script
+------------------------------------------------------------------------
+r157 | jcrawford | 2016-01-17 16:45:24 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[base]: spin ptr employed to read recording. Causing temprory prevention
+------------------------------------------------------------------------
+r156 | jcrawford | 2016-01-17 14:46:17 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[base]: recording few logs are added
+------------------------------------------------------------------------
+r155 | jcrawford | 2016-01-17 14:27:18 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[base] : removed the unecessory mutex locks in the thread state 
+------------------------------------------------------------------------
+r154 | jcrawford | 2016-01-17 09:24:58 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[base]: couple of additional logs for reading from recordings
+------------------------------------------------------------------------
+r153 | jcrawford | 2016-01-17 08:40:27 +0530 (Sun, 17 Jan 2016) | 1 line
+
+[base]: fixed a bug
+------------------------------------------------------------------------
+r152 | jcrawford | 2016-01-15 22:55:55 +0530 (Fri, 15 Jan 2016) | 1 line
+
+[base]: checkin for the signal handler to stop the app once all recordings are fininshed
+------------------------------------------------------------------------
+r151 | jcrawford | 2016-01-15 10:40:24 +0530 (Fri, 15 Jan 2016) | 1 line
+
+[base]: changes for recorder
+------------------------------------------------------------------------
+r150 | jcrawford | 2016-01-14 22:36:06 +0530 (Thu, 14 Jan 2016) | 1 line
+
+[base]: fix for the record generation
+------------------------------------------------------------------------
+r149 | jcrawford | 2016-01-13 20:24:02 +0530 (Wed, 13 Jan 2016) | 1 line
+
+[base]: patch for the doing recording
+------------------------------------------------------------------------
+r148 | jcrawford | 2016-01-10 20:23:05 +0530 (Sun, 10 Jan 2016) | 1 line
+
+[base]: patch for the recording
+------------------------------------------------------------------------
+r147 | jcrawford | 2016-01-10 15:53:36 +0530 (Sun, 10 Jan 2016) | 1 line
+
+[base]: optional support for the record writing
+------------------------------------------------------------------------
+r146 | jcrawford | 2016-01-10 15:42:59 +0530 (Sun, 10 Jan 2016) | 1 line
+
+[base]: made _reRecord optional
+------------------------------------------------------------------------
+r145 | jcrawford | 2016-01-10 15:35:20 +0530 (Sun, 10 Jan 2016) | 1 line
+
+[base]: implemented reRecord as optional
+------------------------------------------------------------------------
+r144 | jcrawford | 2016-01-10 12:32:33 +0530 (Sun, 10 Jan 2016) | 1 line
+
+[base]: deleted logger
+------------------------------------------------------------------------
+r143 | jcrawford | 2016-01-09 23:58:46 +0530 (Sat, 09 Jan 2016) | 1 line
+
+[base]: change for calculating and printing the latency
+------------------------------------------------------------------------
+r142 | jcrawford | 2016-01-09 22:40:42 +0530 (Sat, 09 Jan 2016) | 1 line
+
+[base]: code to delete all the resources
+------------------------------------------------------------------------
+r141 | jcrawford | 2016-01-09 13:41:58 +0530 (Sat, 09 Jan 2016) | 1 line
+
+[base]: Patch for stopping the resources
+------------------------------------------------------------------------
+r140 | jcrawford | 2016-01-07 10:55:43 +0530 (Thu, 07 Jan 2016) | 1 line
+
+[base]: code to register signal_handler via sigaction
+------------------------------------------------------------------------
+r139 | jcrawford | 2016-01-06 10:47:46 +0530 (Wed, 06 Jan 2016) | 1 line
+
+[base]: support for message time
+------------------------------------------------------------------------
+r138 | jcrawford | 2016-01-05 13:52:57 +0530 (Tue, 05 Jan 2016) | 1 line
+
+[base]: minor changes of chanding log level and added refreshTime
+------------------------------------------------------------------------
+r137 | jcrawford | 2016-01-05 13:16:34 +0530 (Tue, 05 Jan 2016) | 1 line
+
+[product-docs]: added svn switch example
+------------------------------------------------------------------------
+r136 | jcrawford | 2016-01-05 12:29:57 +0530 (Tue, 05 Jan 2016) | 1 line
+
+[base]: Atomic support for the globaltime
+------------------------------------------------------------------------
+r135 | jcrawford | 2016-01-05 09:39:44 +0530 (Tue, 05 Jan 2016) | 1 line
+
+[base]: Added a order pool size overflow fix, at max 1 million orders could be malloc in pool
+------------------------------------------------------------------------
+r134 | jcrawford | 2016-01-04 09:47:11 +0530 (Mon, 04 Jan 2016) | 1 line
+
+[base]:fixed couple of bugs and implemented functionlity to print rcvt and callback raise time
+------------------------------------------------------------------------
+r133 | jcrawford | 2016-01-04 08:31:57 +0530 (Mon, 04 Jan 2016) | 1 line
+
+[infra]:added missing utils
+------------------------------------------------------------------------
+r132 | jcrawford | 2016-01-03 16:34:57 +0530 (Sun, 03 Jan 2016) | 1 line
+
+[base]: changes for modular order object formation
+------------------------------------------------------------------------
+r131 | jcrawford | 2016-01-03 00:52:19 +0530 (Sun, 03 Jan 2016) | 2 lines
+
+[base]: support for _msgType added in the Base part of objects
+[millenium]: support for _msgType added in the Base part of objects
+------------------------------------------------------------------------
+r130 | jcrawford | 2016-01-01 00:39:56 +0530 (Fri, 01 Jan 2016) | 1 line
+
+[base]: corrected some assertions
+------------------------------------------------------------------------
+r129 | jcrawford | 2015-12-31 21:47:35 +0530 (Thu, 31 Dec 2015) | 1 line
+
+Adding ProductInfo.cpp
+------------------------------------------------------------------------
+r128 | jcrawford | 2015-12-31 21:43:56 +0530 (Thu, 31 Dec 2015) | 1 line
+
+[base]: support for the orderpool
+------------------------------------------------------------------------
+r127 | jcrawford | 2015-12-22 09:37:55 +0530 (Tue, 22 Dec 2015) | 1 line
+
+[base]: recoridng playback support patch, Added re-recording facility
+------------------------------------------------------------------------
+r126 | jcrawford | 2015-12-21 00:20:42 +0530 (Mon, 21 Dec 2015) | 1 line
+
+[base]: recoridng playback support patch
+------------------------------------------------------------------------
+r125 | jcrawford | 2015-12-19 22:08:18 +0530 (Sat, 19 Dec 2015) | 1 line
+
+[base]: recoridng playback support patch
+------------------------------------------------------------------------
+r124 | jcrawford | 2015-12-19 14:29:59 +0530 (Sat, 19 Dec 2015) | 1 line
+
+[base]: recoridng playback support patch
+------------------------------------------------------------------------
+r123 | jcrawford | 2015-12-19 14:09:51 +0530 (Sat, 19 Dec 2015) | 1 line
+
+[base]: recording file 2nd support
+------------------------------------------------------------------------
+r122 | jcrawford | 2015-12-19 11:53:24 +0530 (Sat, 19 Dec 2015) | 1 line
+
+[base]: initial support for the recording playback
+------------------------------------------------------------------------
+r121 | jcrawford | 2015-12-14 18:04:14 +0530 (Mon, 14 Dec 2015) | 2 lines
+
+[base]: Code for adding playback file support
+[infra]: Added tokenize in the StringUtils
+------------------------------------------------------------------------
+r120 | jcrawford | 2015-12-13 20:17:01 +0530 (Sun, 13 Dec 2015) | 2 lines
+
+[base]: Added proper sub queue handling
+[millenium]: changed how sub queue is determined
+------------------------------------------------------------------------
+r119 | jcrawford | 2015-12-13 12:35:49 +0530 (Sun, 13 Dec 2015) | 1 line
+
+[base]: added few assertions
+------------------------------------------------------------------------
+r118 | jcrawford | 2015-12-13 00:20:44 +0530 (Sun, 13 Dec 2015) | 1 line
+
+[base]: minor reformatting
+------------------------------------------------------------------------
+r117 | jcrawford | 2015-12-12 23:21:55 +0530 (Sat, 12 Dec 2015) | 1 line
+
+[base]: Added few functions for assertion
+------------------------------------------------------------------------
+r116 | jcrawford | 2015-12-11 23:12:59 +0530 (Fri, 11 Dec 2015) | 1 line
+
+[base]: passing _line and processor thread on the line
+------------------------------------------------------------------------
+r115 | jcrawford | 2015-12-09 19:15:20 +0530 (Wed, 09 Dec 2015) | 1 line
+
+[base]: changes for replacing customData with messageInfo
+------------------------------------------------------------------------
+r114 | jcrawford | 2015-12-09 10:34:38 +0530 (Wed, 09 Dec 2015) | 2 lines
+
+[base]: renamed _exchangeTime to _xt and added market order support
+[millenium]: bit of cleaning of variable names
+------------------------------------------------------------------------
+r113 | jcrawford | 2015-12-06 22:17:16 +0530 (Sun, 06 Dec 2015) | 1 line
+
+[millenium]: implemented the few messages
+------------------------------------------------------------------------
+r112 | jcrawford | 2015-12-06 19:44:55 +0530 (Sun, 06 Dec 2015) | 1 line
+
+[millenium]: bit of cleaning of member names
+------------------------------------------------------------------------
+r111 | jcrawford | 2015-12-06 16:10:59 +0530 (Sun, 06 Dec 2015) | 1 line
+
+[millenium]: bit of cleaning of member names
+------------------------------------------------------------------------
+r110 | jcrawford | 2015-12-06 11:45:01 +0530 (Sun, 06 Dec 2015) | 2 lines
+
+[base]: modified the trade and order interface
+[millenium]: Cleaned some order and trade creation
+------------------------------------------------------------------------
+r109 | jcrawford | 2015-12-06 09:36:45 +0530 (Sun, 06 Dec 2015) | 1 line
+
+[millenium] :supported symStatus  message
+------------------------------------------------------------------------
+r108 | jcrawford | 2015-12-04 10:53:48 +0530 (Fri, 04 Dec 2015) | 1 line
+
+[millenium] :supported symStatus  message
+------------------------------------------------------------------------
+r107 | jcrawford | 2015-12-04 01:12:57 +0530 (Fri, 04 Dec 2015) | 2 lines
+
+[base]: added productInfo search and more sophisticated subscription
+[millenium]: product info and status callback
+------------------------------------------------------------------------
+r106 | jcrawford | 2015-12-01 10:56:18 +0530 (Tue, 01 Dec 2015) | 2 lines
+
+[base]: Supported onProductInfo callback
+[millenium]: raised onProductInfo callback
+------------------------------------------------------------------------
+r105 | jcrawford | 2015-11-30 21:07:55 +0530 (Mon, 30 Nov 2015) | 2 lines
+
+[millenium]: supported symbol dir message
+[base]: code to create productInfo and InstrStateToString conversion
+------------------------------------------------------------------------
+r104 | jcrawford | 2015-11-30 10:55:24 +0530 (Mon, 30 Nov 2015) | 2 lines
+
+[millenium]: supported symbol dir message
+[base]: added support for product info
+------------------------------------------------------------------------
+r103 | jcrawford | 2015-11-29 17:05:21 +0530 (Sun, 29 Nov 2015) | 1 line
+
+[base]: removed the bug in Message->_packet shared_ptr initialization causing processor thread to segfault
+------------------------------------------------------------------------
+r102 | jcrawford | 2015-11-29 13:43:38 +0530 (Sun, 29 Nov 2015) | 2 lines
+
+[base]: supported new trie for replacing sub pointer
+[millenium]: added judy for trie support
+------------------------------------------------------------------------
+r101 | jcrawford | 2015-11-28 21:35:44 +0530 (Sat, 28 Nov 2015) | 1 line
+
+[base]: bit of code to add product info
+------------------------------------------------------------------------
+r100 | jcrawford | 2015-11-27 21:33:33 +0530 (Fri, 27 Nov 2015) | 2 lines
+
+[base]: Line has feed handler pointer now
+[millenium]: Line has feed handler pointer now
+------------------------------------------------------------------------
+r99 | jcrawford | 2015-11-27 21:27:48 +0530 (Fri, 27 Nov 2015) | 2 lines
+
+[base]: Line has feed handler pointer now
+[millenium]: Line has feed handler pointer now
+------------------------------------------------------------------------
+r98 | jcrawford | 2015-11-27 18:41:31 +0530 (Fri, 27 Nov 2015) | 1 line
+
+[base]: made lineGroup protected
+------------------------------------------------------------------------
+r97 | jcrawford | 2015-11-27 18:34:28 +0530 (Fri, 27 Nov 2015) | 1 line
+
+[base]: corrected the naming of variables
+------------------------------------------------------------------------
+r96 | jcrawford | 2015-11-27 18:20:17 +0530 (Fri, 27 Nov 2015) | 1 line
+
+[millenium]: cleaned the non required processMsg function
+------------------------------------------------------------------------
+r95 | jcrawford | 2015-11-25 01:10:18 +0530 (Wed, 25 Nov 2015) | 1 line
+
+[infra]: corrected logs in thread binding
+------------------------------------------------------------------------
+r94 | jcrawford | 2015-11-25 00:35:38 +0530 (Wed, 25 Nov 2015) | 3 lines
+
+[infra]: thread: code to bind the core, pugixml: fixed bug to catch exepected values correctly
+[base]: Code to bind threads automatically to cores
+[product-docs]: Added info for config option bind-threads
+------------------------------------------------------------------------
+r93 | jcrawford | 2015-11-24 18:14:36 +0530 (Tue, 24 Nov 2015) | 1 line
+
+[infra]: cleaned socket files
+------------------------------------------------------------------------
+r92 | jcrawford | 2015-11-23 23:20:51 +0530 (Mon, 23 Nov 2015) | 2 lines
+
+[infra]: cleaned the logger
+[millenium]: Minor bug fix in raising order
+------------------------------------------------------------------------
+r91 | jcrawford | 2015-11-23 20:46:32 +0530 (Mon, 23 Nov 2015) | 1 line
+
+[millenium]: added the callback interest guard
+------------------------------------------------------------------------
+r90 | jcrawford | 2015-11-23 00:03:20 +0530 (Mon, 23 Nov 2015) | 1 line
+
+[base]: corrected the log
+------------------------------------------------------------------------
+r89 | jcrawford | 2015-11-22 23:40:34 +0530 (Sun, 22 Nov 2015) | 1 line
+
+[base]: Added Subscription.cpp and Subscription.h
+------------------------------------------------------------------------
+r88 | jcrawford | 2015-11-22 23:38:39 +0530 (Sun, 22 Nov 2015) | 1 line
+
+[base]: added routines to subscribe wildcard
+------------------------------------------------------------------------
+r87 | jcrawford | 2015-11-22 14:52:06 +0530 (Sun, 22 Nov 2015) | 1 line
+
+[core]: moved all core files as base files to simplify design
+------------------------------------------------------------------------
+r86 | jcrawford | 2015-11-22 13:44:50 +0530 (Sun, 22 Nov 2015) | 2 lines
+
+[base]: changes for Trade
+[millenium]: changes for implementing trade object
+------------------------------------------------------------------------
+r85 | jcrawford | 2015-11-22 00:01:17 +0530 (Sun, 22 Nov 2015) | 2 lines
+
+[base]: changes for implementing default subscriber API
+[millenium] : couple of fixes
+------------------------------------------------------------------------
+r84 | jcrawford | 2015-11-20 23:48:08 +0530 (Fri, 20 Nov 2015) | 2 lines
+
+[base]: Changes for subscription creation
+[millenium]: changes for subscription creation
+------------------------------------------------------------------------
+r83 | jcrawford | 2015-11-19 18:35:49 +0530 (Thu, 19 Nov 2015) | 2 lines
+
+[base]: changes for assigning message to processor thread
+[millenium]: changes for assigning message to processor thread
+------------------------------------------------------------------------
+r82 | jcrawford | 2015-11-19 11:02:37 +0530 (Thu, 19 Nov 2015) | 2 lines
+
+[millenium]: Changes to support addOrder message and message queuing
+[core]: changes for Order buisness object
+------------------------------------------------------------------------
+r81 | jcrawford | 2015-11-18 18:32:44 +0530 (Wed, 18 Nov 2015) | 2 lines
+
+[base]: removed static function calls
+[millenium]: removed static function calls
+------------------------------------------------------------------------
+r80 | jcrawford | 2015-11-18 08:27:24 +0530 (Wed, 18 Nov 2015) | 2 lines
+
+[base]: changed the cource of calling processPacket
+[millenium]: changed the cource of calling processPacket
+------------------------------------------------------------------------
+r79 | jcrawford | 2015-11-17 18:41:37 +0530 (Tue, 17 Nov 2015) | 2 lines
+
+[base]: Added support for processor
+[millenium]: changes for accomodating the processor
+------------------------------------------------------------------------
+r78 | jcrawford | 2015-11-15 09:14:44 +0530 (Sun, 15 Nov 2015) | 1 line
+
+[core]: Added few missing files
+------------------------------------------------------------------------
+r77 | jcrawford | 2015-11-15 09:13:49 +0530 (Sun, 15 Nov 2015) | 1 line
+
+[core]: Added business objects declaration
+------------------------------------------------------------------------
+r76 | jcrawford | 2015-11-14 13:59:36 +0530 (Sat, 14 Nov 2015) | 1 line
+
+[base]: implemented the onFeed and onLineGroup call backs
+------------------------------------------------------------------------
+r75 | jcrawford | 2015-11-14 12:00:55 +0530 (Sat, 14 Nov 2015) | 1 line
+
+[millenium]: Added all function parsing functions
+------------------------------------------------------------------------
+r74 | jcrawford | 2015-11-13 23:28:30 +0530 (Fri, 13 Nov 2015) | 1 line
+
+[millenium]: checked in all millenium messages
+------------------------------------------------------------------------
+r73 | jcrawford | 2015-11-13 15:03:39 +0530 (Fri, 13 Nov 2015) | 1 line
+
+[millenium]:  Corrected parser to process the packets correctly
+------------------------------------------------------------------------
+r72 | jcrawford | 2015-11-13 12:18:10 +0530 (Fri, 13 Nov 2015) | 1 line
+
+[millenium]: minor changes for millenium parsing
+------------------------------------------------------------------------
+r71 | jcrawford | 2015-11-12 23:20:01 +0530 (Thu, 12 Nov 2015) | 2 lines
+
+[base]: Added structs to support processor queue message
+[millenium]: Moved functionaliry related with assigner queues to the base
+------------------------------------------------------------------------
+r70 | jcrawford | 2015-11-12 15:06:01 +0530 (Thu, 12 Nov 2015) | 1 line
+
+[base]: replaced _name from const char* to const char [NAME_SIZE]
+------------------------------------------------------------------------
+r69 | jcrawford | 2015-11-12 13:35:18 +0530 (Thu, 12 Nov 2015) | 1 line
+
+[base]: Code for processorThread support, third patch
+------------------------------------------------------------------------
+r68 | jcrawford | 2015-11-12 13:23:58 +0530 (Thu, 12 Nov 2015) | 1 line
+
+[base]: Code for processorThread support, second patch
+------------------------------------------------------------------------
+r67 | jcrawford | 2015-11-12 12:42:20 +0530 (Thu, 12 Nov 2015) | 1 line
+
+[base]: Code for processorThread support
+------------------------------------------------------------------------
+r66 | jcrawford | 2015-11-11 23:47:23 +0530 (Wed, 11 Nov 2015) | 1 line
+
+[millenium]: First  half of changes for processor-assigner module
+------------------------------------------------------------------------
+r65 | jcrawford | 2015-11-11 17:24:38 +0530 (Wed, 11 Nov 2015) | 1 line
+
+[base]: Minor bug fix in findFeedType
+------------------------------------------------------------------------
+r64 | jcrawford | 2015-11-11 17:14:23 +0530 (Wed, 11 Nov 2015) | 2 lines
+
+[base]: Changes for removing name from feedHandler
+[millenium]: Changes for removing name from constructor
+------------------------------------------------------------------------
+r63 | jcrawford | 2015-11-11 15:08:43 +0530 (Wed, 11 Nov 2015) | 1 line
+
+[infra]: replaced _name data type from std::string to const char*
+------------------------------------------------------------------------
+r62 | jcrawford | 2015-11-11 05:45:58 +0530 (Wed, 11 Nov 2015) | 1 line
+
+[millenium]: removed unnecessory file
+------------------------------------------------------------------------
+r61 | jcrawford | 2015-11-10 22:35:15 +0530 (Tue, 10 Nov 2015) | 1 line
+
+[infra]: Moved the logger to use customised lock free SPSC boost queue
+------------------------------------------------------------------------
+r60 | jcrawford | 2015-11-10 09:31:33 +0530 (Tue, 10 Nov 2015) | 1 line
+
+[infra]: fixed a duplicate packet recieving bug
+------------------------------------------------------------------------
+r59 | jcrawford | 2015-11-09 23:42:29 +0530 (Mon, 09 Nov 2015) | 1 line
+
+[base]: corrected the default _onPacketStart callback
+------------------------------------------------------------------------
+r58 | jcrawford | 2015-11-07 01:39:42 +0530 (Sat, 07 Nov 2015) | 2 lines
+
+[infra]: Corrected the logger
+[base]: few additional logs in the lineHandler
+------------------------------------------------------------------------
+r57 | jcrawford | 2015-11-06 23:06:36 +0530 (Fri, 06 Nov 2015) | 1 line
+
+[base]: Added API files
+------------------------------------------------------------------------
+r56 | jcrawford | 2015-11-06 20:42:25 +0530 (Fri, 06 Nov 2015) | 1 line
+
+[base] Changes to request the snapshot correctly only once
+------------------------------------------------------------------------
+r55 | jcrawford | 2015-11-06 20:05:37 +0530 (Fri, 06 Nov 2015) | 4 lines
+
+[base] : Line sequencer added the gapCache and snapCache function
+[infra]: SPSC Boost queue, corrected Element state function as atomic constructor is deleted
+[millenium]: small correction
+
+------------------------------------------------------------------------
+r54 | jcrawford | 2015-11-05 17:07:36 +0530 (Thu, 05 Nov 2015) | 3 lines
+
+[infra]: corrected a logger bug
+[base]: added function to call Line::_start
+
+------------------------------------------------------------------------
+r53 | jcrawford | 2015-11-05 02:29:13 +0530 (Thu, 05 Nov 2015) | 1 line
+
+[base]: Minor corrections in the sequencer
+------------------------------------------------------------------------
+r52 | jcrawford | 2015-11-05 00:38:27 +0530 (Thu, 05 Nov 2015) | 1 line
+
+[base]: Added sequencing logic in the base Line
+------------------------------------------------------------------------
+r51 | jcrawford | 2015-11-04 02:20:58 +0530 (Wed, 04 Nov 2015) | 1 line
+
+[millenium]: code to basic process in millenium feed
+------------------------------------------------------------------------
+r50 | jcrawford | 2015-11-02 21:09:48 +0530 (Mon, 02 Nov 2015) | 1 line
+
+[base]: Some more appropriate logging
+------------------------------------------------------------------------
+r49 | jcrawford | 2015-11-02 20:45:26 +0530 (Mon, 02 Nov 2015) | 1 line
+
+[infra]: corrected sockets to receive the multicast packets
+------------------------------------------------------------------------
+r48 | jcrawford | 2015-11-02 19:22:38 +0530 (Mon, 02 Nov 2015) | 1 line
+
+[base]: fixed few bugs
+------------------------------------------------------------------------
+r47 | jcrawford | 2015-11-01 23:27:19 +0530 (Sun, 01 Nov 2015) | 1 line
+
+[base]: removed the socket
+------------------------------------------------------------------------
+r46 | jcrawford | 2015-11-01 23:25:29 +0530 (Sun, 01 Nov 2015) | 1 line
+
+[base]: Some extra code to non-block the read and bind socket to interface
+------------------------------------------------------------------------
+r45 | jcrawford | 2015-11-01 19:09:31 +0530 (Sun, 01 Nov 2015) | 1 line
+
+[base]: Added code to read the network loop
+------------------------------------------------------------------------
+r44 | jcrawford | 2015-11-01 17:31:00 +0530 (Sun, 01 Nov 2015) | 1 line
+
+[base]: Added logic to push packets into the queue
+------------------------------------------------------------------------
+r43 | jcrawford | 2015-11-01 12:57:30 +0530 (Sun, 01 Nov 2015) | 1 line
+
+[base]: resolved few bugs
+------------------------------------------------------------------------
+r42 | jcrawford | 2015-10-31 23:31:55 +0530 (Sat, 31 Oct 2015) | 1 line
+
+[base]: resolved one of undefined reference
+------------------------------------------------------------------------
+r41 | jcrawford | 2015-10-31 22:48:06 +0530 (Sat, 31 Oct 2015) | 1 line
+
+[infra]: added missing socket files
+------------------------------------------------------------------------
+r40 | jcrawford | 2015-10-31 22:39:58 +0530 (Sat, 31 Oct 2015) | 1 line
+
+[base]: code related with socket creation
+------------------------------------------------------------------------
+r39 | jcrawford | 2015-10-31 20:09:01 +0530 (Sat, 31 Oct 2015) | 1 line
+
+[base]: Minor fix, resolved undefined symbols
+------------------------------------------------------------------------
+r38 | jcrawford | 2015-10-31 19:41:31 +0530 (Sat, 31 Oct 2015) | 1 line
+
+[base]: socket reading code
+------------------------------------------------------------------------
+r37 | jcrawford | 2015-10-31 00:03:34 +0530 (Sat, 31 Oct 2015) | 1 line
+
+[base]: simplified the code
+------------------------------------------------------------------------
+r36 | jcrawford | 2015-10-30 18:57:03 +0530 (Fri, 30 Oct 2015) | 1 line
+
+[base]: Saperated packet code
+------------------------------------------------------------------------
+r35 | jcrawford | 2015-10-30 18:26:52 +0530 (Fri, 30 Oct 2015) | 2 lines
+
+[base]: introduced the infra namespace
+[millenium]: introduced the base namespace
+------------------------------------------------------------------------
+r34 | jcrawford | 2015-10-29 22:00:02 +0530 (Thu, 29 Oct 2015) | 1 line
+
+[base]: renamed feed manager as feed handler
+------------------------------------------------------------------------
+r33 | jcrawford | 2015-10-29 10:43:00 +0530 (Thu, 29 Oct 2015) | 1 line
+
+[base]: Perfect compilable code. Could add any feed now onwards
+------------------------------------------------------------------------
+r32 | jcrawford | 2015-10-28 22:38:00 +0530 (Wed, 28 Oct 2015) | 1 line
+
+[base]: added code to call correct feed specific Line and LineGroup constructors
+------------------------------------------------------------------------
+r31 | jcrawford | 2015-10-27 23:10:25 +0530 (Tue, 27 Oct 2015) | 1 line
+
+[feed/millenium]: Added pointer function to process the packet in Line
+------------------------------------------------------------------------
+r30 | jcrawford | 2015-10-27 19:04:22 +0530 (Tue, 27 Oct 2015) | 2 lines
+
+[millenium]: Added millenium feed
+[base]: support to call the feed specefic Line::process function
+------------------------------------------------------------------------
+r29 | jcrawford | 2015-10-25 13:07:40 +0530 (Sun, 25 Oct 2015) | 1 line
+
+[feeds]: Added millenium feed
+------------------------------------------------------------------------
+r28 | jcrawford | 2015-10-25 13:05:24 +0530 (Sun, 25 Oct 2015) | 1 line
+
+[base]: Added the specific feed manager and linegroup creation routines
+------------------------------------------------------------------------
+r27 | jcrawford | 2015-10-24 00:04:19 +0530 (Sat, 24 Oct 2015) | 1 line
+
+[infra]: initial version of the SPSC queue
+------------------------------------------------------------------------
+r26 | jcrawford | 2015-10-23 20:16:57 +0530 (Fri, 23 Oct 2015) | 1 line
+
+[base]: Minor changes + added missed Line.cpp
+------------------------------------------------------------------------
+r25 | jcrawford | 2015-10-22 01:46:36 +0530 (Thu, 22 Oct 2015) | 1 line
+
+[base]: Code to add and remove IPs from network reader
+------------------------------------------------------------------------
+r24 | jcrawford | 2015-10-21 18:37:50 +0530 (Wed, 21 Oct 2015) | 1 line
+
+[base]: fixed a minor bug in operator < of class IP
+------------------------------------------------------------------------
+r23 | jcrawford | 2015-10-21 09:34:26 +0530 (Wed, 21 Oct 2015) | 2 lines
+
+[base]: fixed the logs 
+[infra]: fixed most of the logs
+------------------------------------------------------------------------
+r22 | jcrawford | 2015-10-20 22:49:37 +0530 (Tue, 20 Oct 2015) | 1 line
+
+[base]: Added thread cretion logic for network reader and Line group
+------------------------------------------------------------------------
+r21 | jcrawford | 2015-10-20 11:04:20 +0530 (Tue, 20 Oct 2015) | 1 line
+
+[base]: Code to loop the NetworkReader
+------------------------------------------------------------------------
+r20 | jcrawford | 2015-10-20 10:51:36 +0530 (Tue, 20 Oct 2015) | 1 line
+
+[base]: Code to register line to NetworkReader
+------------------------------------------------------------------------
+r19 | jcrawford | 2015-10-19 11:46:21 +0530 (Mon, 19 Oct 2015) | 1 line
+
+[base]: Code for adding line IPs to network reader
+------------------------------------------------------------------------
+r18 | jcrawford | 2015-10-18 17:33:42 +0530 (Sun, 18 Oct 2015) | 1 line
+
+[base]: few corrections 
+------------------------------------------------------------------------
+r17 | jcrawford | 2015-10-18 15:15:04 +0530 (Sun, 18 Oct 2015) | 1 line
+
+[infra]: added the thread binding to the cpu core
+------------------------------------------------------------------------
+r16 | jcrawford | 2015-10-17 19:12:56 +0530 (Sat, 17 Oct 2015) | 1 line
+
+[base]: removed a bug related with FeedManger data member initialization
+------------------------------------------------------------------------
+r15 | jcrawford | 2015-10-17 17:49:25 +0530 (Sat, 17 Oct 2015) | 1 line
+
+[base]: Coded for Line creation and IP parsing routines
+------------------------------------------------------------------------
+r14 | jcrawford | 2015-10-17 09:19:11 +0530 (Sat, 17 Oct 2015) | 2 lines
+
+[base]: Removed logger neccesity from constructor and thread creation
+[infra]: Removed logger neccesity from constructor and thread creation
+------------------------------------------------------------------------
+r13 | jcrawford | 2015-10-16 20:46:34 +0530 (Fri, 16 Oct 2015) | 2 lines
+
+[base]: added code for LineGroup creation
+[infra]: Changed the Common.h to InfraCommon.h
+------------------------------------------------------------------------
+r12 | jcrawford | 2015-10-15 18:24:15 +0530 (Thu, 15 Oct 2015) | 2 lines
+
+[base]: Added couple of config option on FeedManager]
+[infra]: corrected log message into the pugixml
+------------------------------------------------------------------------
+r11 | jcrawford | 2015-10-14 22:39:44 +0530 (Wed, 14 Oct 2015) | 1 line
+
+[infra, base]: Added code for feed manager config option parsing
+------------------------------------------------------------------------
+r10 | jcrawford | 2015-10-14 09:53:04 +0530 (Wed, 14 Oct 2015) | 1 line
+
+[base] Checked in commented feed Manager code
+------------------------------------------------------------------------
+r9 | jcrawford | 2015-10-14 09:31:56 +0530 (Wed, 14 Oct 2015) | 1 line
+
+[base] Added Connection code
+------------------------------------------------------------------------
+r8 | jcrawford | 2015-10-14 09:31:27 +0530 (Wed, 14 Oct 2015) | 1 line
+
+[base] Added Feed Manager and Connection code
+------------------------------------------------------------------------
+r7 | jcrawford | 2015-10-14 07:36:54 +0530 (Wed, 14 Oct 2015) | 1 line
+
+[infra, base]: moved network-reader to base according to design
+------------------------------------------------------------------------
+r6 | jcrawford | 2015-10-13 21:36:41 +0530 (Tue, 13 Oct 2015) | 1 line
+
+[general]: deleted clarice log file
+------------------------------------------------------------------------
+r5 | jcrawford | 2015-10-13 21:35:56 +0530 (Tue, 13 Oct 2015) | 1 line
+
+[infra, base]: Moved MarketDataApplication into base as suggested by intitive design
+------------------------------------------------------------------------
+r4 | jcrawford | 2015-10-13 18:19:13 +0530 (Tue, 13 Oct 2015) | 1 line
+
+[infra, base]: Removed the dependencies from infra. Added basic code for base
+------------------------------------------------------------------------
+r3 | jcrawford | 2015-10-07 08:01:22 +0530 (Wed, 07 Oct 2015) | 1 line
+
+[infra, core]: Initial NetworkReader interface
+------------------------------------------------------------------------
+r2 | jcrawford | 2015-10-06 07:06:27 +0530 (Tue, 06 Oct 2015) | 3 lines
+
+Initial draft checkin in the clarice. Developed till Oct6, 2015
+
+
+------------------------------------------------------------------------
+r1 | jcrawford | 2015-10-06 07:03:02 +0530 (Tue, 06 Oct 2015) | 3 lines
+
+Creating main Clarice repository
+
+
+------------------------------------------------------------------------

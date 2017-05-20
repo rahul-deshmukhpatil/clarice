@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+<Logger file="clariec.log"	level="debug" logger-queue-size="2000" max-size-in-mb="1000" />
+
+<ApplicationManager name="MarketDataUS" bind-thread="" cpu="-1"/>
+
+<CallBackThreadPool name="global-raiser">
+	<CallbackThread name="" cpu="" range="0-9a-m"/>
+	<CallbackThread name="" cpu="" range="n-z" />
+</CallBackThreadPool>
+
+<NetworkReaders>
+	<NetworkReader xname="global-network-reader" cpu="" />
+	<NetworkOtherType name="otherType" cpu="" />
+</NetworkReaders>
+
+<FeedManagers>
+	<FeedOtherType/>			
+
+	<FeedManager name="SampleFeed" playback-mode="file" libarary="" callback-thread-pool="">			
+		<Recovery snapshot-username="" snapshot-password="" global-primary-tcp-snapshot="" global-secondary-tcp-snapshot="" global-primary-tcp-retranse="" global-secondary-tcp-retrans=""
+				retranse-username="" retranse-password="" global-primary-udp-snapshot="" global-secondary-udp-snapshot="" global-primary-udp-retranse="" global-secondary-udp-retrans=""/>
+		<CallBackThreadPool name="feed-raiser"/>
+		<Connection name="" callback-thread-pool="">
+			<CallBackThreadPool name="connection1-raiser1"/>
+			<CallBackThreadPool name="connection1-raiser2"/>
+			<Linehandler name="" type="" data-type="" thread="" callback-thread-pool="" dormant-secondarr=""
+					username="" password="" primary-mc-line="" 	secondary-mc-line=""  primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					snapshot-username="" snapshot-password="" primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					retranse-username="" retranse-password="" primary-mc-snapshot="" secondary-mc-snapshot="" primary-mc-retranse="" secondary-mc-retrans=""/>
+		</Connection>
+		<Connection cpu="" callback-thread-pool="">
+			<CallBackThreadPool name="connection2-raiser1"/>
+			<CallBackThreadPool name="connection2-raiser2"/>
+			<Linehandler name="" type="" data-type="" callback-thread-pool=""
+					primary-mc-line="" 	secondary-mc-line=""  primary-mc-snapshot=""  secondary-mc-snapshot=""  primary-mc-retrans=""   secondary-mc-retrans=""
+					primary-tcp-line=""	secondary-tcp-line="" primary-tcp-snapshot="" secondary-tcp-snapshot="" primary-tcp-retranse="" secondary-tcp-retrans=""
+					udp-primary-snapshot="" udp-secondary-snapshot="" udp-primary-retranse="" udp-secondary-retrans=""/>
+		</Connection>
+	</FeedManager>
+</FeedManagers>
+</config>
+
+<!--
+Logger
+	file	: Log file name. Absolute or relative path
+				if Directory not present will be created
+	
+	max-size-in-mb	: Max size of single log file. Successive versions
+				will be created after the file 
+
+	logger-queue-size : Size of each logger handler queue. Default value is  
+
+	level:	Below are the logLevels. Default log level is SANITY 
+			CRITICAL	
+			ERROR	: No subscription found. Can not login to recovery
+			EXCEPTION
+			WARN	: High usage,
+			SANITY	: Sanitly checks like cross book
+			INFO	: Something less trivial
+			DEBUG	: Something trivial
+			TRACE	: Log all the members from the message
+
+ApplicationManager
+			Only one node of the ApplicationManager must be there. Otherwise it will throw a config exception.	
+	name	: Symbolic name of application manager.
+	cpu		: CPU no to which to bind the application manager. It is must to bound this thread to particular CPU.
+	bind-threads : Default value manual.
+				automatically:	Assign thread no automatically,
+							Ensure that there are sufficient cores are available. Otherwise
+							if all cores are allocated it will raise exception
+				manually	 : consider core given with "cpu" config option on 
+								respective config nodes to bind
+				false		 : No thread binding and "cpu" config option on nodes is
+								ignored
+		
+CallBackThreadPool
+		CallBackThreadPool is pool of threads, which raise the callbacks. To get callback for particular security on
+		particular thread, you must associate your session managers, connections, linehadlers with the thread pool.
+		
+	name	: Name of the thread pool. "none" and "inherit" cannot be the name of the thread pools. 
+
+FeedManagers:
+	name	: Name of the feed manager instance within application.
+	feed	: Type of the feed this node belongs to eg Millenium, ITCH, BATS ... etc
+	playback-mode : Either file or live. In file mode you must provide config option 
+				playback-file to point to correct playback file.
+
+LineGroup:
+	name	: Name of the LineGroup instance within FeedManager.
+				It must be uniq within session manager.
+
+	packet-queue-size : size of packet queue, written by Network Reader and read by LineGroup thread
+				Must be sufficient to handle load at market open, close and when market is volatile
+	
+Line
+	name	: Name of the thread;
+	type	: Type of linehandler
+				consumer: Consumes data.
+				assigner: Assigns data to process to particular thread depending upon the subscription name
+	data-type : One or multiple of following 
+				order/book/quote.
+				 trade
+				 status
+				 custom 
+				 productInfo
+				 
+	callback-thread-pool :  Name of CallBackThreadPool. The values are below
+				inherit	: Whatever is the callback-thread-pool of the parent Connection. 
+							so lineHandlers could share the threadpool
+				none	: LineHandler itself will raise the callbacks
+				
+				"Name of thread-pool": Name of the CallBackThreadPool.
+
+	dormant-secondary: Listen to packets from secondary line only if needed. ie gap found on the primary
+				till it is resolved.
+
+	swaplines-a-b:	Listen to B line first. A line will act as secondary.
+
+	primary-*: Primary mc, tcp lines.	
+	secondary-*: Secondary mc, tcp lines.	
+
+-->
+	

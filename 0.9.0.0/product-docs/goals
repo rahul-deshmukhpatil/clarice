@@ -1,0 +1,40 @@
+1> Comeup with the proprietary recording format
+ 	support the pcap file format
+	1> InProc-Publisher : could be used for the latency purpose
+	2> Raw-Player
+	Done
+
+2> Comeup with the prorpietary custom data format
+
+3> Comeup with the proprietary mo format
+
+4> Check network queue reading latency
+	from NR packet write in queue till LG reads the packet
+	
+5> Turnoff 2ndary MC channel whenever not needed
+
+6> Implement the TCP channels
+
+0216 goals
+	- implement the callbacks on request
+
+0222 goals
+	- implement the euronext
+
+0304
+	- Add the comments
+	- do the performance monitoring
+	- support the euronext
+	- write doc on the latency. 
+	- support the NIC card, hw timestamp for the packet
+	- support the LSE
+	- support the nordic
+	- support the disabling secondary mc
+	- support the quotes
+	- support the secondary mc domarncy
+	- support if snapshot/rerequest is not present, clear cache
+	- support millenium disabling of the order not found messages
+	- support the time based recovery failure
+	- correct the millenium parseFunc array
+	- parallel processing model for lines
+	- support other millenium exchanges

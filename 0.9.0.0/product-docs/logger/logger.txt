@@ -1,0 +1,7 @@
+What log line should be comaprased of
+	1> Date, Time , Level, threadName:ThreadId, file, pretty_function, line, *format, Data... 
+
+Per thread one LoggerClientHandle will be available. 
+Use LoggerClientHandle handle to write log in the queue.
+If Queue is full, first try to write an Error log in the queue itself that queue is full at time. and then write the log in the queue.
+

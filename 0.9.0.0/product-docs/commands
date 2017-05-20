@@ -1,0 +1,42 @@
+#See on which core threads are running 
+inter-active 
+watch -tdn0.5	ps -mo pid,tid,%cpu,psr -p \`pgrep mdapp-debug\`
+ps -mo pid,tid,%cpu,psr -p `pgrep mdapp-debug`
+
+#See all the thread running 
+top -H -p PID 
+	
+#See intrupts per core
+ cat /proc/interrupts
+
+#Disable IRQ balacing ie. All intruppts go to 0
+in file /etc/default/irqbalance set ENABLED="0"
+
+#Ban the CPU 1110 ie 0x07 ie 2,3, 4 from irqs 
+in file /etc/default/irqbalance set IRQBALANCE_BANNED_CPUS="7"
+
+#see the intrupt count increament in 1 second
+cat /proc/interrupts > i1; sleep 1 ; cat /proc/interrupts > i2; vim -Od i1 i2
+
+#See CPU cores frequency
+cat /proc/cpuinfo | grep  MH
+
+------------------------------------------------
+#enable core dump
+#corefile stuff in /etc/sysctl.conf
+kernel.core_uses_pid = 1
+kernel.core_pattern = ./core-%e-%s-%u-%g-%p-%t
+fs.suid_dumpable = 2
+
+#to Activate setting immdiatly
+sudo sysctl -p
+------------------------------------------------
+
+#gdb load core file
+gdb  bin/64/mdapp-debug  core-0tom-11-1000-1000-10340-1449171271
+
+#switch the svn server ip: old ip first
+svn switch --relocate svn+ssh://jcrawford@192.168.0.108/svn-clarice/clarice svn+ssh://jcrawford@192.168.0.102/svn-clarice/clarice
+
+#catch system call in gdb
+catch syscall <futex or system-call no>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+<Logger name="logger" file="omxnordic-clarice.log" level="INFO" logger-queue-size="2000" max-size-in-mb="1000" cpu="6"/>
+
+<ApplicationManager name="MarketDataUS" bind-threads="manually" first-cpu="4" cpu=""/>
+
+<NetworkReaders>
+    <NetworkReader name="NetReader1" cpu="4" />
+</NetworkReaders>
+
+<FeedHandlers>
+    <FeedOtherType/>    
+
+    <FeedHandler name="omxnordic" feed="omxnordic" playback-mode="file" libarary="" callback-thread-pool="" playback-files="omxnordic-18.cl.gz" re-record="false" xrecord="true" callbacks="QUOTE,CUSTOM,TRADE,STATUS" maintain-orders="${MAINTAIN_ORDER}">
+        <LineGroups>
+        <LineGroup name="LG1" xprocessor="EProcessor" network-reader="NetReader1" cpu="5" callback-thread-pool="">
+            <Lines>
+            <Line name="omx" primary-mc-line="233.74.125.41:31041" secondary-mc-line="233.74.125.141:31141"/>
+            </Lines>
+        </LineGroup>
+        </LineGroups>
+    </FeedHandler>
+</FeedHandlers>
+</config>

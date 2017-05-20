@@ -1,0 +1,94 @@
+Writing in c has advantage that it could be easily replaced by the hardware units/FPGAs
+c++ has some compiler complexity disadvantages which might hurt a moduler h/w implementation as well it could be slow.
+c++ Data structures are I think written for million to billion objects handling, but what platform needs is data structure to fastly handle 0.1 million objects 
+rarely any data structure instance will contain more than this objs.
+
+publisher:
+
+Will function to playback on file/mc mode, depending upon whether packets are read from socket or directly filled to the queues from the file-recorded-packets. 
+This should have functionality to playback like realtime, but in the fast way. 
+As well architecture should embed logic to include publisher as a thread and not as a saperate process. As well publisher should be able to play back the file in possible fast mode.
+
+Logger:
+This should have functionality to log message like it has been logged real time.
+
+GH
+Gap handler should have recovery-mechanism which could be supported by the other process (mini-recovery-handler) or all the lines in the same feed could support the single login-password(how could exchange know which linehandler is sending the request-and which process is requesting the packet). This could be used for the shared login-among the multiple instances of the feed running on the machine. Even this could even support use of single instances of the same feed running on the different machines, and this single primary-feed could have only single IP which could be used to get the message. Running feed as saperate process and not compositor on feed side is a basic change.
+Gap sending api should have parameter to send bulk request or request-on arrival packets of prev response.
+Gap handler should pass the some messages forcefully for the process.eg. like sequence reset, which clears the books. This might need extra output parameter to the SequneceNumDetection function.
+
+Base distributor:
+    A Base-distributer could also be placed over here so that two different feed-implementations could get same data(no additional licence) for the feed. This is crucial. Two companies could share licence without letting anyone. Other thing is that whenever mc-feed-addresses change you need not to change the address of the feed-clients listening at this level. 
+    HBs should include the primary and secondary tcp-addreses on which mc-addresses should be requested. At the base-distributor level functionality for failover to the secondary data-source should be available. As well any failure of tcp-connection break should be reported via admin.
+
+Feed:
+Though saperate feed running thread each line handler would force us to use saperate machine for each feed because of limited number of cores, this will prevent us from getting the
+1>  Compositor will be on the client side, so releasing new software will be only release a new feature in the client and setup new feed on the one of new machine or add feed to the machine.
+2>  Low traffic lines could have same line handler- no extra core.
+3>  Routes will be added to the single server.
+4> if any server fails to run, whole of that feed will go wrong. So its better to run the 2 different feeds on the same machines, same pair will be on the different machine.
+5> should include functionality to process the symbol/mo records. and form the product info.
+
+Packager
+Packager would act to create the business objects. These business objects will have constant data type but could have variable structure defined by clients, clients will have business objects in thier own format. Aswell support fix(type-field) structures, let the client choose, what they really want out of platform.
+As well the system should give freedom to user to replace one or more module with their own. like customized packager-This could allow clients to use their own data-types.
+
+collector and Admin-lower-upper
+Admin at the level of the collector which could give gaps happened, filled, out of sequence packet count. Admin could be connected from out of network. A tool to connect the all admins from all the feeds.
+
+Upper Distributor
+Upper-Distributor could send messages depending upon type(trade,quote,book)/name-range.
+Distributor should be moduler to support fix fast. As well immplement full A-B line(tcp-mc), selective-full(per-symbol/full-mkt/segment) retranse-snap on the tcp-mc. It includes HBs and recovering depending upon, time, packets cached and HB seq num. The upper distributor HBs should include primary and secondary mc-addresses.
+Distribution should be supported on the server basis as well.
+
+====
+Memeory and cpu and cache checking scripts which could
+====
+
+Client
+Failover: in case of not recieving data/hb failover to the secondary server.
+
+reciever:
+recieves the data.
+
+compositor:
+Linux kernel doulby linked list with mutiple list, with prev-nest for native and composite links.
+
+Admin:
+    should be able to show the composite books
+
+====
+Memeory and cpu and cache checking scripts which could
+====
+
+Running saperate feed has some advantages
+1>  If client is comparising the compositor, you do not need 6 different mdrc servers  in the env, so only client would be realease with the some functionality.
+2>  Feeds could share login, lines. See common-login-feed
+3>
+
+-   check the all recovery-login passwords are working with all the lines, if login-password is shared for all lines.
+-   Check duplicate requests are not being sent if login-password is shared among multiple feeds.
+
+Recorder
+-   recording will have a header-file <date, > and data<sec.nanoSec timeDiff from day start,>
+-   inbuilt md-pub which mc-data. Not absolute file recording reader
+-   list the libraries used by the each module.
+-   Release notes/ updated release doc with libs
+-  External release thing with the code.
+
+Normalized platform not just normalized data.
+
+built-in testing of fields in BO and the gap-handling.
+
+
+1> selective symbol snapshot functionality from the exchange, while other securities are ok.
+2> MACRO to enable the code inclusion into the binary.
+3> Test suite, which tests the output after sending single packet.
+4> Admin should include the functionality to test the packets processed, last packet arrived, thread_processed_packets(in case of threads sharing the line)
+5> Admin should tell the page faults functionality. Better if system call changes are traced.
+6> enhaced single callback after processing all messages in the packet should be inside the core code. 
+8> No book should be raised before snpashot is complete.
+9> Use single threaded STL data structures, Our design supports only one data structure accesses the other.
+10> Logger should be run on the trivial work socket of cores. So that cache lines could not be missed because of the logging
+11> Implement the sanity in the logging macro.
+12> Create a utiliy which raises exception if threads are pinned to same core.
